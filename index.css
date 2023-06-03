@@ -129,7 +129,7 @@ body{
     display:inline-flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: flex-end;
+    align-content: center;
 }
 
 #page-footer a:nth-child(2) > span > img {
