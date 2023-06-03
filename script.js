@@ -37,5 +37,5 @@ const testTree = util.$parse (
         },
     }
 );
-util.$render(pageBody, testTree);
+
 // setTimeout(() => Array.from(pageBody.children).map((child) => pageBody.parentElement.replaceChild(pageBody.cloneNode(), pageBody)), 1000 * 5);
