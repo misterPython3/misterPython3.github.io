@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="misterPython3">
@@ -67,3 +68,159 @@
     <script src="test.js"></script>
 </body>
 </html>
+=======
+    <meta name="author" content="misterPython3">
+    <meta name="description" content="misterPython3 Web Page">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>misterPython3 Web Page</title>
+    <style>
+        :root{--page-margin-inline:4vw;--color:rgb(99, 99, 99);--button-radius:max(5vh,3.28vw);--button-padding-block:0vw;--button-padding-inline:0vw;--page-widget-padding-inline-end:0.5vh;--button-font-size:max(3.8vh,2.56vw);}html{font-size:100%;}body{margin:0;background: rgba(250, 250, 250, 0.9);}
+        #page-widget{
+            position: fixed;
+            bottom:0;
+            right:0;
+            z-index: 1;
+            min-width:calc(var(--button-radius) * 2);
+            max-width:calc(var(--page-margin-inline) * 2);
+            margin-block-end:1vh;
+            padding-inline-end:var(--page-widget-padding-inline-end);
+            display: inline-flex;
+            flex-flow:column nowrap;
+            justify-content: space-between;
+        }
+        #page-widget button{
+            all:unset;
+            flex:1 0 calc((var(--button-radius) * 2));
+            padding-block:var(--button-padding-block);
+            padding-inline:var(--button-padding-inline);
+            display:inline-flex;
+            flex-flow:row wrap;
+            place-content: center;
+            text-align: center;
+            font-size:var(--button-font-size);
+            font-weight: 1000;
+            width:calc(var(--button-radius) * 2);
+            text-indent: 0;
+            line-height: 0;
+            clip-path:circle(42%);
+            opacity:0.86;
+            background-color: rgba(228, 228, 228, 0.644);
+        }#page-widget button:hover{
+            filter:brightness(80%);
+        }
+        #page-widget button:active{
+            filter:brightness(90%);
+        }#page-links-button-icon{
+            flex:1 0 100%;
+            height:100%;
+            display: inline-flex;
+            place-content: center;
+            flex-wrap: wrap;
+        }#page-links-dialog{
+            position: fixed;
+            top:0;
+            backdrop-filter: blur(min(0.05vw,0.05vh)) contrast(95%) opacity(90%);
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            z-index: -2;
+            user-select: none;
+            display: flex;
+            flex-wrap:wrap;
+            place-content: center;
+            content-visibility: hidden;
+            visibility: hidden;
+        }#page-links{
+            box-sizing: border-box;
+            position: relative;
+            height:90%;
+            width:62%;
+            background-color:rgb(246, 246, 246);
+            opacity: 0.98;
+            border:0.1vw solid grey;
+            box-shadow: 0.4vw 0.4vh 0.4vw 0.4vh grey;
+        }#page-links-dialog::-webkit-scrollbar{
+            width:2vw;
+            border-radius:1vw;
+        }#page-links-dialog::-webkit-scrollbar-track{
+            background-color:grey;
+            border-radius:1vw;
+        }#page-links-dialog::-webkit-scrollbar-track-piece{
+            background-color:yellow;
+        }#page-links-dialog::-webkit-scrollbar-thumb{
+            background-color:yellowgreen;
+        }#root-page-content{
+            min-height:100vh;color:var(--color);
+            margin-inline:var(--page-margin-inline);
+            padding-block: 8vh 0.8vh;
+            box-sizing: border-box;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-rendering: optimizeSpeed;
+        }#page-content{
+            border:0.1vw solid transparent;
+        }#page-content-title{padding-block:2vh 1vh;width: 100%;overflow-x: hidden;text-overflow: clip;width:100%;hyphens: auto;
+        }#page-content-description{margin-inline:var(--page-margin-inline);white-space: pre-wrap;
+        }#content-title{font-size:4rem;font-weight: 700;}#content-description{font-size:1.469rem;
+        }#misterPython3{color:inherit;}#page-footer{min-height: 20vh;
+        }#page-content-description * {all:inherit;}
+        @media screen and (orientation:portrait) {:root{--button-radius:max(4.33vh,4.33vw);--button-padding-block:0vh;--button-padding-inline:0vh;--page-widget-padding-inline-end:0.15vh;--button-font-size:3.8vh;}#page-links{width:72%;height:86%;}}
+        @media screen and (max-width:320px){html{width:320px;}#page-links{
+            height:100%;
+            width:100%;
+        }}
+        @media screen and (max-height:320px){html{height:320px;}}
+        @media screen and (max-width:512px){html{width:100vw;}#page-content-title{overflow-x:auto;word-wrap: break-word;}}
+        @media screen and (min-width:1440px){html{font-size:1.49vw;}#root-page-content{font-family:Arial;}#page-content-description{font-size:4rem;line-height:2vh;}}
+    </style>
+</head>
+<body>
+    <div id="page-widget">
+        <button id="page-links-button">
+            <span id="page-links-button-icon">🔗</span>
+        </button>
+    </div>
+    <div id="page-links-dialog" hidden>
+        
+        <div id="page-links">
+            
+
+        </div>
+    </div>
+    <main role="single-page-content" id="root-page-content">
+        <article id="page-content">
+            <header id="page-content-title">
+                <span id="content-title">
+                    mister&shy;Python3
+                </span>
+            </header>
+            <section id="page-content-description">
+                <span id="content-description">Hello, my name is <a href="https://github.com/misterPython3" target="_blank" id="misterPython3">misterPython3<a> and I am a self-taught software developer with a strong passion for coding and technology. I have gained hands-on experience with the MERN stack (MongoDB, Express, ReactJS, and NodeJS) through personal projects and learning resources, and I am eager to apply my skills in a professional setting.
+
+                    Despite my lack of formal work experience, I am confident in my ability to deliver high-quality software solutions. I am a quick learner and I have a natural talent for problem-solving, which I believe will enable me to hit the ground running and make a positive contribution to any team.
+                    
+                    I am eager to take on new challenges and continue growing my skills and knowledge in the field. I am dedicated to producing results that meet the highest standards and I am committed to providing an excellent user experience in all of my projects.
+                    
+                    If you are looking for a motivated and enthusiastic software developer with a strong foundation in the MERN stack, I would be honored to bring my skills and experience to your next project. Let's work together to bring your vision to life!
+                    -Generated with <a href="chat.openai.com">(ChatGPT)</a></span>
+            </section>
+        
+        </article>
+        <footer id="page-footer" hidden>
+            
+        </footer>
+    </main>
+    <script>
+        var $id = (id) => (document.getElementById(id));
+        var dialogue = $id('page-links-dialog');
+        var pageLinksButtonIcon = $id('page-links-button-icon');
+        $id('page-links-button').addEventListener('click',(e) => {
+            if(dialogue.getAttribute('hidden')==null){
+                dialogue.setAttribute('hidden','');dialogue.style.setProperty('content-visibility','hidden');dialogue.style.setProperty('visibility','hidden');dialogue.style.setProperty('z-index','-2');pageLinksButtonIcon.setHTML('🔗');}else {dialogue.removeAttribute('hidden');dialogue.style.setProperty('visibility','visible');dialogue.style.setProperty('content-visibility','visible');dialogue.style.setProperty('z-index','0');pageLinksButtonIcon.setHTML('&#10006;');}
+            }
+        );
+        
+    </script>
+</body>
+</html>
+>>>>>>> 65e85ffe4b64a4e92ddf04839babfa76c7a17efa
