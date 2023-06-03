@@ -1,0 +1,212 @@
+:root{
+    --page-header-h:70px;
+    --page-body-h:max(30px, calc(100vh - var(--page-header-h)));
+    --page-footer-h:max(30px, 38vh);
+
+
+    --root-default-bgColor:rgb(236, 238, 241);
+    --root-color:rgb(44, 44, 44);
+    --root-fontFamily: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --page-header-bgColor:rgb(243, 245, 248);
+    --page-body-bgColor:rgb(249, 249, 252);
+    --test-border:min(1px, 0.1vh, 0.1vw) solid grey;
+
+    --settings-button-default-bgColor:rgba(244, 248, 252, 0.96);
+    --settings-button-x-pos:min(30px, 3.8vw, 1.6vh);
+    --settings-button-y-pos:min(32px, 1.9vh, 3.8vw);
+
+    --theme-button-size:max(18px , 6.6vh, 5vw);
+}   
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+#root{
+    color:var(--root-color);
+    background-color: var(--root-default-bgColor);
+    font-family: var(--root-fontFamily);
+    position:relative;
+}
+#root-page-header{
+    min-height:var(--page-header-h);
+    position:sticky;
+    top:0;
+    z-index:2;
+    background-color:var(--page-header-bgColor);
+}
+#root-page-body{
+    min-height:var(--page-body-h);
+    background-color:var(--page-body-bgColor);
+}
+
+#page-header,
+#page-body,
+#page-header-bar,
+#page-footer {
+    min-height:inherit;
+}
+
+#page-header{
+    display:flex;
+    flex-flow:column wrap;
+}
+
+#page-header-bar,
+#page-header-title,
+#page-footer a > span,
+#page-footer a > span > img
+{
+    width:100%;
+}
+
+#page-footer a > span,
+#page-footer a > span > img
+{
+    height:100%;
+}
+
+#page-header-bar{
+    flex:1 0 max-content;
+    display:flex;
+    flex-wrap:wrap;
+    padding-inline:max(13px,1.38vw);
+    border-bottom:min(1px, 0.01vw, 0.01vh) inset rgba(216, 219, 226, 0.808);
+}
+#page-header-title{
+    flex:1 1 max-content;
+    display:inline-flex;
+    flex-wrap:wrap;
+    align-content:stretch;
+    justify-content: flex-start;
+    text-overflow: clip;
+    
+}
+#page-title{
+    font-size:35px;
+    font-weight: 300;
+    padding-inline:min(1.6vw,3.4vh, 34px);
+    text-overflow: ellipsis;
+    hyphens: auto;
+    text-overflow: clip;
+    overflow: hidden;
+    background-color: rgba(221, 223, 231, 0.829);
+    display:inline-flex;
+    flex-wrap:wrap;
+    align-content:center;
+}
+
+#root-page-footer{
+    min-height:var(--page-footer-h);
+}
+
+#page-footer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#page-footer a {
+    all:unset;
+    height: min(55px, 12.5vw, 7.8vh);
+    width:min(55px, 12.5vw, 7.8vh);
+    padding:max(1.4vh, 1.6vw) max(1.7vw, 1.5vh);
+    border:min(0.01vw, 0.01vh, 1px) outset transparent;
+    border-radius:min(5px, 12%);
+    
+}
+
+#page-footer a:nth-child(2){
+    width:min(60px, 13.64vw, 8.4vh);
+}
+
+#page-footer a:nth-child(2) > span {
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+#page-footer a:nth-child(2) > span > img {
+    height:97%;
+    width:98%;
+}
+
+#page-footer a:hover{
+    border-color:rgba(163, 163, 163, 0.541);
+    background-color:rgba(185, 185, 185, 0.096);
+}
+#page-footer a:active{
+    border-style:inset;
+}
+
+
+section.page-section {
+    height:max(64vh, var(--page-body-h));
+    
+}
+.overflow {
+    overflow:auto;
+}
+.no-overflow {
+    overflow:hidden;
+}
+
+#--settings-button {
+    display:block;
+    position:fixed;
+    bottom:var(--settings-button-y-pos);
+    right:var(--settings-button-x-pos);
+    border:var(--test-border);
+    height:var(--theme-button-size);
+    width:var(--theme-button-size);
+    
+    border-radius:100%;
+    contain: strict;
+    line-height: 0;
+    
+}
+#--settings-button > button:first-child {
+    height:100%;
+    width:100%;
+    background-color:var(--settings-button-default-bgColor);
+    border:initial;
+    display:inline-flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content:center;
+    font-size:max(10px, 3.2vw, 3.4vh);
+    font-weight: light;
+    text-align: center;
+    opacity:0.98;
+    
+}
+#--settings-button > button:not(:first-child){
+    display:none;
+}
+
+#intro-section {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: center;
+    color:rgb(218, 218, 218);
+    font-family: sans-serif;
+    font-size:max(16px, 5.3vw, 4.6vh);
+    text-align: center;
+}
+
+@media screen and (max-width:128px){
+    html {
+        min-width:128px;
+        min-height: 100vh;
+    }
+    body{
+        min-height: 100vh;
+    }
+}
