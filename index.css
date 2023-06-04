@@ -110,19 +110,22 @@ body{
     flex-wrap:wrap;
     justify-content: center;
     align-content: center;
+    padding-inline:min(48px, 15vw, 15vh);
 }
 
 #page-footer a {
     all:unset;
-    height: min(55px, 12.25vw, 7.8vh);
-    width:min(55px, 12.25vw, 7.8vh);
+    height: min(55px, 12.35vw, 7.2vh);
+    width:min(55px, 12.35vw, 7.2vh);
     padding:max(1.4vh, 1.6vw) max(1.7vw, 1.5vh);
     border:min(0.01vw, 0.01vh, 1px) outset transparent;
     border-radius:min(5px, 12%);
     display:flex;
     flex-wrap:wrap;
     align-content: center;
+    margin-bottom:max(10px, 0.5vw, 1vh);
 }
+
 
 #page-footer a span {
     display:inline-flex;
