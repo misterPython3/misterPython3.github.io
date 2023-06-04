@@ -114,8 +114,8 @@ body{
 
 #page-footer a {
     all:unset;
-    height: min(55px, 12.5vw, 7.8vh);
-    width:min(55px, 12.5vw, 7.8vh);
+    height: min(55px, 12.25vw, 7.8vh);
+    width:min(55px, 12.25vw, 7.8vh);
     padding:max(1.4vh, 1.6vw) max(1.7vw, 1.5vh);
     border:min(0.01vw, 0.01vh, 1px) outset transparent;
     border-radius:min(5px, 12%);
@@ -138,6 +138,10 @@ body{
 #page-footer a:nth-child(2) > span > img {
     height:97%;
     width:98%;
+}
+
+#page-footer a:nth-child(5) {
+    width:min(64px, 14vw, 9.15vh);
 }
 
 #page-footer a:hover{
